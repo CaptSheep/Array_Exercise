@@ -32,3 +32,18 @@ function sortArray($array)
 }
 
 print_r(sortArray($array));
+echo "<br>";
+
+
+function eraseNumber($array): array
+{
+    $array1 = [];
+    for ($i = 0; $i< count($array) ; $i++){
+        if (!in_array($array[$i],$array1)){
+            $array1[] = $array[$i];
+        }
+    }
+    return $array1;
+}
+
+print_r(eraseNumber([1,1,2,2,5,1]));
