@@ -143,6 +143,14 @@ function sortIn($array){
 
 }
 echo " Mang sap xep theo chieu tang dan la : " . "<br>";
-print_r( sortIn($array));
+print_r(sortIn($array));
 echo "<br>";
 
+
+function sortDe($array){
+    rsort($array);
+    return $array;
+}
+echo " Mang sap xep theo chieu giam dan la : " . "<br>";
+print_r(sortDe($array));
+echo "<br>";
